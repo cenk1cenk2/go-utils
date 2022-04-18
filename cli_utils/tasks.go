@@ -133,7 +133,7 @@ func ExecuteAndPipeToLogger(cmd *exec.Cmd, context TaskMetadata) error {
 	stdout, stdoutReader, stderr, stderrReader, err := CreateCommandReaders(cmd)
 
 	if err != nil {
-		Log.Fatalln(err)
+		return err
 	}
 
 	defer stdout.Close()
@@ -141,7 +141,7 @@ func ExecuteAndPipeToLogger(cmd *exec.Cmd, context TaskMetadata) error {
 
 	if err := cmd.Start(); err != nil {
 		Log.WithField("context", "FAILED").
-			Fatalln(fmt.Sprintf("Can not start the command: %s", cmd))
+			Fatalln(fmt.Sprintf("Can not start the command: $ %s", cmd))
 	}
 
 	go HandleOutputStreamReader(stdoutReader, context, context.StdOutLogLevel)
