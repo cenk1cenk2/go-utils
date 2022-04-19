@@ -69,7 +69,10 @@ func RunAllTasks(options RunAllTasksOptions) {
 
 			task.Log = Log.WithField("context", task.Metadata.Context)
 
-			if task.Metadata.Skip != true {
+			if task.Metadata.Skip {
+				Log.WithField("context", "SKIP").
+					Warnln(fmt.Sprintf("Task: %s", task.Metadata.Context))
+			} else {
 				if task.Tasks == nil {
 					task.Tasks = []TaskFunc{}
 				}
@@ -89,8 +92,6 @@ func RunAllTasks(options RunAllTasksOptions) {
 				}
 
 				runCommands(&task, task.Commands)
-			} else {
-				Log.Warnln(fmt.Sprintf("Task skipped: %s", task.Metadata.Context))
 			}
 
 			TaskList = TaskList[1:]
