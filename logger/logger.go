@@ -7,13 +7,15 @@ import (
 )
 
 // Log Returns a new logrus logger instance.
-var Log = logrus.New()
+var Log *logrus.Logger
 
 // InitiateLogger the default logger
 func InitiateLogger(level logrus.Level) *logrus.Logger {
 	if Log != nil {
 		return Log
 	}
+
+	Log = logrus.New()
 
 	Log.Out = os.Stdout
 

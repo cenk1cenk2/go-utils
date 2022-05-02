@@ -51,13 +51,7 @@ func CliGreet(c *cli.Context) {
 
 func CliRun(app *cli.App) {
 	if err := app.Run(os.Args); err != nil {
-		if Log != nil {
-			Log.Fatalln(err)
-		} else {
-			fmt.Println(err)
-
-			os.Exit(1)
-		}
+		Log.Fatalln(err)
 	}
 }
 
