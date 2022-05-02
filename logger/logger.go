@@ -11,6 +11,10 @@ var Log = logrus.New()
 
 // InitiateLogger the default logger
 func InitiateLogger(level logrus.Level) *logrus.Logger {
+	if Log != nil {
+		return Log
+	}
+
 	Log.Out = os.Stdout
 
 	Log.SetFormatter(&Formatter{
