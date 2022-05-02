@@ -1,4 +1,4 @@
-package formatter
+package logger
 
 import (
 	"bytes"
@@ -9,6 +9,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 )
+
+// THIS IS TAKEN FROM THE LOGRUS LEVELED FORMATTER, I MODIFIED IT SINCE I DO NOT LIKE LONG LEVEL NAMES
 
 // Formatter - logrus formatter, implements logrus.Formatter
 type Formatter struct {

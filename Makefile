@@ -1,13 +1,19 @@
-GOCMD=go
-GOBUILD=$(GOCMD) build
-GOCLEAN=$(GOCMD) clean
-GOTEST=$(GOCMD) test
-GOGET=$(GOCMD) get
-GOVENDOR=$(GOCMD) mod vendor
+GO_VERSION=1.18
+
+GO_CMD=go
+GO_BUILD=$(GO_CMD) build
+GO_RUN=$(GO_CMD) run .
+GO_CLEAN=$(GO_CMD) clean
+GO_TEST=$(GO_CMD) test
+GO_GET=$(GO_CMD) get
+GO_VENDOR=$(GO_CMD) mod vendor
+
+GO_OPTION_C=0
 
 install:
-	$(GOVENDOR)
+	$(GO_VENDOR)
 
 update:
-	$(GOGET) -u all
-	$(GOCMD) mod tidy
+	$(GO_GET) -u all
+	$(GO_VENDOR)
+	$(GO_CMD) mod tidy -compat=$(GO_VERSION)
