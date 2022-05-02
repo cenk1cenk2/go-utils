@@ -44,8 +44,9 @@ func CliBeforeFunction(c *cli.Context) error {
 }
 
 func CliGreet(c *cli.Context) {
-	fmt.Println(fmt.Sprintf("%s - %s", c.App.Name, c.App.Version))
-	fmt.Println(strings.Repeat("-", 20))
+	name := fmt.Sprintf("%s - %s", c.App.Name, c.App.Version)
+	fmt.Println(name)
+	fmt.Println(strings.Repeat("-", len(name)))
 }
 
 func CliRun(app *cli.App) {
