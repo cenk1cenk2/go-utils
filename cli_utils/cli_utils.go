@@ -51,6 +51,10 @@ func CliGreet(c *cli.Context) {
 
 func CliRun(app *cli.App) {
 	if err := app.Run(os.Args); err != nil {
+		if Log == nil {
+			Log = logger.InitiateLogger(logrus.DebugLevel)
+		}
+
 		Log.Fatalln(err)
 	}
 }
