@@ -51,7 +51,7 @@ type Formatter struct {
 	LevelChars int
 
 	// Redact some special keywords in strings
-	Secrets *[]*string
+	Secrets []*string
 }
 
 // Format an log entry
@@ -124,8 +124,8 @@ func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 	}
 
 	// write message
-	if len(*f.Secrets) > 0 {
-		for _, secret := range *f.Secrets {
+	if len(f.Secrets) > 0 {
+		for _, secret := range f.Secrets {
 			entry.Message = strings.ReplaceAll(entry.Message, *secret, "[REDACTED]")
 		}
 	}
