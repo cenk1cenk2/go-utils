@@ -1,3 +1,10 @@
+## [1.2.5](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.4...v1.2.5) (2022-09-29)
+
+
+### Bug Fixes
+
+* update formatter ([070335c](https://gitlab.kilic.dev/libraries/go-utils/commit/070335c027e486cf0d582fc39ea250fe8d07646c))
+
 ## [1.2.4](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.3...v1.2.4) (2022-09-29)
 
 
