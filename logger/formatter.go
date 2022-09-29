@@ -229,12 +229,12 @@ func getColorByLevel(level logrus.Level) int {
 	case logrus.TraceLevel:
 		return colorMagenta
 	case logrus.DebugLevel:
-		return colorCyan
+		return colorGray
 	case logrus.WarnLevel:
 		return colorYellow
 	case logrus.ErrorLevel, logrus.FatalLevel, logrus.PanicLevel:
 		return colorRed
 	default:
-		return colorBlue
+		return colorCyan
 	}
 }
