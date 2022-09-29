@@ -1,3 +1,10 @@
+## [1.3.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.0...v1.3.1) (2022-09-29)
+
+
+### Bug Fixes
+
+* update colors ([d0525c6](https://gitlab.kilic.dev/libraries/go-utils/commit/d0525c60312674e3efc9571d335e814f577192eb))
+
 # [1.3.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.5...v1.3.0) (2022-09-29)
 
 
