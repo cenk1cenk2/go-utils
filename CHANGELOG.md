@@ -1,3 +1,10 @@
+# [1.2.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.1.2...v1.2.0) (2022-09-29)
+
+
+### Features
+
+* add secret manipulation ([b33b132](https://gitlab.kilic.dev/libraries/go-utils/commit/b33b132df24ff3acf0bb3705b9d17b33eed1983c))
+
 ## [1.1.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.1.0...v1.1.1) (2022-05-02)
 
 
