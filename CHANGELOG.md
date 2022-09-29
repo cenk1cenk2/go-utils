@@ -1,3 +1,10 @@
+## [1.2.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.1...v1.2.2) (2022-09-29)
+
+
+### Bug Fixes
+
+* use reference for secrets ([4ce5c15](https://gitlab.kilic.dev/libraries/go-utils/commit/4ce5c1519c254715680e3f416f5e96c4e87b57e8))
+
 ## [1.2.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.0...v1.2.1) (2022-09-29)
 
 
