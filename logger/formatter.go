@@ -216,16 +216,20 @@ func (f *Formatter) writeField(b *bytes.Buffer, entry *logrus.Entry, field strin
 }
 
 const (
-	colorRed    = 31
-	colorYellow = 33
-	colorBlue   = 36
-	colorGray   = 37
+	colorRed     = 31
+	colorYellow  = 33
+	colorBlue    = 34
+	colorGray    = 37
+	colorCyan    = 36
+	colorMagenta = 35
 )
 
 func getColorByLevel(level logrus.Level) int {
 	switch level {
-	case logrus.DebugLevel, logrus.TraceLevel:
-		return colorGray
+	case logrus.TraceLevel:
+		return colorMagenta
+	case logrus.DebugLevel:
+		return colorCyan
 	case logrus.WarnLevel:
 		return colorYellow
 	case logrus.ErrorLevel, logrus.FatalLevel, logrus.PanicLevel:
