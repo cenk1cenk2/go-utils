@@ -1,3 +1,10 @@
+## [1.2.3](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.2...v1.2.3) (2022-09-29)
+
+
+### Bug Fixes
+
+* indirect more ([b968700](https://gitlab.kilic.dev/libraries/go-utils/commit/b968700e12e6a8ce1caeaf3ccc74a03f5a8c813e))
+
 ## [1.2.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.2.1...v1.2.2) (2022-09-29)
 
 
