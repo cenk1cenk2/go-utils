@@ -51,7 +51,7 @@ type Formatter struct {
 	LevelChars int
 
 	// Redact some special keywords in strings
-	Secrets []*string
+	Secrets *[]*string
 }
 
 // Format an log entry
