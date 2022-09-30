@@ -1,3 +1,10 @@
+## [1.3.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.1...v1.3.2) (2022-09-30)
+
+
+### Bug Fixes
+
+* **deps:** update all minor dependency updates ([0107833](https://gitlab.kilic.dev/libraries/go-utils/commit/01078338386e6d60b53fd7930afc0043b7600672))
+
 ## [1.3.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.0...v1.3.1) (2022-09-29)
 
 
