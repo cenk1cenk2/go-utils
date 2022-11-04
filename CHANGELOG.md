@@ -1,3 +1,10 @@
+## [1.3.8](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.7...v1.3.8) (2022-11-04)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/urfave/cli/v2 to v2.23.2 ([3d69566](https://gitlab.kilic.dev/libraries/go-utils/commit/3d69566d43b02aa990c0ad7679a45970b0fda518))
+
 ## [1.3.7](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.6...v1.3.7) (2022-10-30)
 
 
