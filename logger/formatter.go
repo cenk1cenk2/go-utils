@@ -10,9 +10,11 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-// THIS IS TAKEN FROM THE LOGRUS LEVELED FORMATTER, I MODIFIED IT SINCE I DO NOT LIKE LONG LEVEL NAMES
+// THIS IS TAKEN FROM THE LOGRUS LEVELED FORMATTER, I MODIFIED IT SINCE I DO NOT LIKE LONG LEVEL NAMES.
 
-// Formatter - logrus formatter, implements logrus.Formatter
+//revive:disable unhandled-error
+
+// Formatter - logrus formatter, implements logrus.Formatter.
 type Formatter struct {
 	// FieldsOrder - default: fields sorted alphabetically
 	FieldsOrder []string
@@ -32,7 +34,7 @@ type Formatter struct {
 	// NoFieldsSpace - no space between fields
 	NoFieldsSpace bool
 
-	// ShowFullLevel - show a full level [WARNING] instead of [WARN]
+	// ShowFullLevel - show a full level [WARNING] instead of [WARN].
 	ShowFullLevel bool
 
 	// NoUppercaseLevel - no upper case for level value
@@ -54,7 +56,7 @@ type Formatter struct {
 	Secrets *[]string
 }
 
-// Format an log entry
+// Format an log entry.
 func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 	levelColor := getColorByLevel(entry.Level)
 
@@ -148,7 +150,7 @@ func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 func (f *Formatter) writeCaller(b *bytes.Buffer, entry *logrus.Entry) {
 	if entry.HasCaller() {
 		if f.CustomCallerFormatter != nil {
-			fmt.Fprintf(b, f.CustomCallerFormatter(entry.Caller))
+			fmt.Fprint(b, f.CustomCallerFormatter(entry.Caller))
 		} else {
 			fmt.Fprintf(
 				b,
@@ -190,7 +192,7 @@ func (f *Formatter) writeOrderedFields(b *bytes.Buffer, entry *logrus.Entry) {
 	if length > 0 {
 		notFoundFields := make([]string, 0, length)
 		for field := range entry.Data {
-			if foundFieldsMap[field] == false {
+			if !foundFieldsMap[field] {
 				notFoundFields = append(notFoundFields, field)
 			}
 		}
@@ -218,7 +220,6 @@ func (f *Formatter) writeField(b *bytes.Buffer, entry *logrus.Entry, field strin
 const (
 	colorRed     = 31
 	colorYellow  = 33
-	colorBlue    = 34
 	colorGray    = 37
 	colorCyan    = 36
 	colorMagenta = 35
@@ -230,6 +231,8 @@ func getColorByLevel(level logrus.Level) int {
 		return colorMagenta
 	case logrus.DebugLevel:
 		return colorGray
+	case logrus.InfoLevel:
+		return colorCyan
 	case logrus.WarnLevel:
 		return colorYellow
 	case logrus.ErrorLevel, logrus.FatalLevel, logrus.PanicLevel:
