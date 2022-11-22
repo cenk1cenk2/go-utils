@@ -1,3 +1,15 @@
+# [2.0.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.10...v2.0.0) (2022-11-22)
+
+
+### Performance Improvements
+
+* remove cli specific code ([a4a0eff](https://gitlab.kilic.dev/libraries/go-utils/commit/a4a0eff791e3ebea76b7fb2cdba0112472980826))
+
+
+### BREAKING CHANGES
+
+* removes all cli utils
+
 ## [1.3.10](https://gitlab.kilic.dev/libraries/go-utils/compare/v1.3.9...v1.3.10) (2022-11-09)
 
 
