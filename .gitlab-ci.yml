@@ -1,6 +1,9 @@
 stages:
   - publish
 
+variables:
+  GO_VERSION: 1.19-alpine
+
 include:
   - project: devops/pipes
     file: /templates/semantic-release.gitlab-ci.yml
