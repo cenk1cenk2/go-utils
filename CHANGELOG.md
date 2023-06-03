@@ -1,3 +1,10 @@
+## [2.0.3](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.2...v2.0.3) (2023-06-03)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/sirupsen/logrus to v1.9.3 ([282e76e](https://gitlab.kilic.dev/libraries/go-utils/commit/282e76e1e876efc95566e33c5b88a91a01a986f4))
+
 ## [2.0.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.1...v2.0.2) (2023-05-17)
 
 
