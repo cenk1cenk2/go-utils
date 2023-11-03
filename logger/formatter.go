@@ -206,7 +206,9 @@ func (f *Formatter) writeOrderedFields(b *bytes.Buffer, entry *logrus.Entry) {
 }
 
 func (f *Formatter) writeField(b *bytes.Buffer, entry *logrus.Entry, field string) {
-	if f.HideKeys {
+	if entry.Data[field] == nil {
+		return
+	} else if f.HideKeys {
 		fmt.Fprintf(b, "[%v]", entry.Data[field])
 	} else {
 		fmt.Fprintf(b, "[%s:%v]", field, entry.Data[field])
