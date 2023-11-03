@@ -1,3 +1,10 @@
+## [2.0.4](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.3...v2.0.4) (2023-11-03)
+
+
+### Bug Fixes
+
+* hide empty space ([208e0ec](https://gitlab.kilic.dev/libraries/go-utils/commit/208e0ec08f0c68b1756efb5e2b11cc2b2855ca36))
+
 ## [2.0.3](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.2...v2.0.3) (2023-06-03)
 
 
