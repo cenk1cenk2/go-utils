@@ -26,6 +26,7 @@ func InitiateLogger(level logrus.Level) *logrus.Logger {
 		NoColors:         false,
 		NoFieldsColors:   false,
 		NoFieldsSpace:    false,
+		NoEmptyFields:    true,
 		ShowFullLevel:    false,
 		NoUppercaseLevel: false,
 		TrimMessages:     true,
