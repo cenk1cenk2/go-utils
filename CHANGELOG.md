@@ -1,3 +1,10 @@
+## [2.0.5](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.4...v2.0.5) (2023-11-05)
+
+
+### Bug Fixes
+
+* update logger ([3ab844d](https://gitlab.kilic.dev/libraries/go-utils/commit/3ab844dfdf5456623987d7486db79ea2b337b7a8))
+
 ## [2.0.4](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.3...v2.0.4) (2023-11-03)
 
 
