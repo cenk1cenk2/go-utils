@@ -1,3 +1,10 @@
+# [2.1.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.5...v2.1.0) (2023-11-06)
+
+
+### Features
+
+* remove dead dep ([dd1daf3](https://gitlab.kilic.dev/libraries/go-utils/commit/dd1daf323d5c942f4df482d7b71a06d9bab58716))
+
 ## [2.0.5](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.4...v2.0.5) (2023-11-05)
 
 
