@@ -1,3 +1,10 @@
+## [2.1.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.1.0...v2.1.1) (2023-11-18)
+
+
+### Bug Fixes
+
+* update deps ([b162a4d](https://gitlab.kilic.dev/libraries/go-utils/commit/b162a4d98af1cc31e962f6d61c4ef5faa826661a))
+
 # [2.1.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.0.5...v2.1.0) (2023-11-06)
 
 
