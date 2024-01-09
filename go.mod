@@ -1,6 +1,6 @@
 module gitlab.kilic.dev/libraries/go-utils/v2
 
-go 1.21.5
+go 1.21.6
 
 require github.com/sirupsen/logrus v1.9.3
 
