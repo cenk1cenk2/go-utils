@@ -1,3 +1,10 @@
+## [2.1.3](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.1.2...v2.1.3) (2024-02-09)
+
+
+### Bug Fixes
+
+* update go version ([9853365](https://gitlab.kilic.dev/libraries/go-utils/commit/985336540fa1f47a8ba6527c63dff0bc9a518dc9))
+
 ## [2.1.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.1.1...v2.1.2) (2023-12-12)
 
 
