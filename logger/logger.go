@@ -29,7 +29,7 @@ func InitiateLogger(level logrus.Level) *logrus.Logger {
 		NoEmptyFields:    true,
 		ShowFullLevel:    false,
 		NoUppercaseLevel: false,
-		TrimMessages:     true,
+		TrimMessages:     false,
 		CallerFirst:      false,
 	})
 
