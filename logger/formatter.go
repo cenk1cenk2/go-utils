@@ -6,6 +6,7 @@ import (
 	"runtime"
 	"sort"
 	"strings"
+	"unicode"
 
 	"github.com/sirupsen/logrus"
 )
@@ -136,7 +137,7 @@ func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 	}
 
 	if f.TrimMessages {
-		b.WriteString(strings.TrimSpace(entry.Message))
+		b.WriteString(strings.TrimRightFunc(entry.Message, unicode.IsSpace))
 	} else {
 		b.WriteString(entry.Message)
 	}
