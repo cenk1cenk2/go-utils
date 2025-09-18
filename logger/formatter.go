@@ -129,7 +129,7 @@ func (f *Formatter) Format(entry *logrus.Entry) ([]byte, error) {
 	}
 
 	// write message
-	if len(*f.Secrets) > 0 {
+	if f.Secrets != nil && len(*f.Secrets) > 0 {
 		for _, secret := range *f.Secrets {
 			entry.Message = strings.ReplaceAll(entry.Message, secret, "[REDACTED]")
 		}
