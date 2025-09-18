@@ -1,3 +1,10 @@
+## [2.2.3](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.2.2...v2.2.3) (2025-09-18)
+
+
+### Bug Fixes
+
+* update configuration ([a75cb82](https://gitlab.kilic.dev/libraries/go-utils/commit/a75cb82412e8b3cf68860b4eb9c4c37ecacd943c))
+
 ## [2.2.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.2.1...v2.2.2) (2025-09-18)
 
 
