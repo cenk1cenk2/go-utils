@@ -1,3 +1,10 @@
+## [2.2.2](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.2.1...v2.2.2) (2025-09-18)
+
+
+### Bug Fixes
+
+* update trimming ([2e6a6ca](https://gitlab.kilic.dev/libraries/go-utils/commit/2e6a6cafddfb392297f6e250aa2e7d4f4675e13c))
+
 ## [2.2.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.2.0...v2.2.1) (2025-09-18)
 
 
