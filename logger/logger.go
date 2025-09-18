@@ -30,7 +30,7 @@ func InitiateLogger(level logrus.Level) *logrus.Logger {
 		ShowFullLevel:    false,
 		NoUppercaseLevel: false,
 		TrimMessages:     false,
-		CallerFirst:      false,
+		CallerFirst:      true,
 	})
 
 	Log.SetLevel(level)

@@ -158,7 +158,7 @@ func (f *Formatter) writeCaller(b *bytes.Buffer, entry *logrus.Entry) {
 		} else {
 			fmt.Fprintf(
 				b,
-				" (%s:%d %s)",
+				"(%s:%d %s)",
 				entry.Caller.File,
 				entry.Caller.Line,
 				entry.Caller.Function,
