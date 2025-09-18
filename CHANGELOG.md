@@ -1,3 +1,10 @@
+## [2.2.1](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.2.0...v2.2.1) (2025-09-18)
+
+
+### Bug Fixes
+
+* tiny bug with the secrets not being initated ([8c4889d](https://gitlab.kilic.dev/libraries/go-utils/commit/8c4889d6efc1e497505c3088d524744ad306f626))
+
 # [2.2.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.1.3...v2.2.0) (2025-09-12)
 
 
