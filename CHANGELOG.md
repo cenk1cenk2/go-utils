@@ -1,3 +1,11 @@
+# [2.2.0](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.1.3...v2.2.0) (2025-09-12)
+
+
+### Features
+
+* dont trim messages for terraform output ([39fab22](https://gitlab.kilic.dev/libraries/go-utils/commit/39fab22d88cef157314f1fe869859315593052ff))
+* tlc ([9a0604d](https://gitlab.kilic.dev/libraries/go-utils/commit/9a0604d509642977ad682add595f9f845b5c0034))
+
 ## [2.1.3](https://gitlab.kilic.dev/libraries/go-utils/compare/v2.1.2...v2.1.3) (2024-02-09)
 
 
